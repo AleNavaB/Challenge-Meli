@@ -26,16 +26,16 @@ const Description = ({ item }: Props) => {
     return 'Usado'
   }
   const formatSolds = (sold_quantity: number) => {
-    return ` - ${sold_quantity | 0} vendidos`
+    return ` - ${sold_quantity || '100'} vendidos`
   }
   return (
     <div className='description_wrapper'>
       <div className='description_wrapper_left'>
         <img className='description_image_preview' alt={item.title} src={item.picture} />
         <div className='description_info'>
-          <p className='description_info_title'>
+          <h2 className='description_info_title'>
             Descripción del producto
-          </p>
+          </h2>
           <p className='info_description'>
             {item.description}
           </p>
@@ -46,9 +46,9 @@ const Description = ({ item }: Props) => {
           {formatCondition(item.condition)}
           {formatSolds(item.sold_quantity)}
         </p>
-        <p className='info_title'>
+        <h1 className='info_title'>
           {item.title}
-        </p>
+        </h1>
         <p className='info_price'>
           {formatPrice(item.price)}          
           {item.price && 

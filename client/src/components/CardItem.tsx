@@ -14,7 +14,8 @@ interface Props {
     }
     picture: string
     condition: string
-    free_shipping: Boolean
+    free_shipping: Boolean,
+    city: string
   }
 }
 
@@ -31,6 +32,9 @@ const CardItems = ({ item }: Props) => {
         <p className='carditem_price' onClick={goToDescription}>
           {formatPrice(item.price)}
           {item.free_shipping && <img alt='free-shipping' src={iconShipping} /> }
+        </p>
+        <p className='carditem_city'>
+            {item.city}
         </p>
         <p className='carditem_title' onClick={goToDescription}>
           {item.title}

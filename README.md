@@ -20,9 +20,9 @@ Aquí se encuentran las instrucciones generales.
 
   ## Ejecución 
   Para poder iniciar nuestro servidor ejecutamos el comando `npm run dev`
-  nos devolvera un mensaje en consola  similar a este `Server running at 5000` 
+  nos devolvera un mensaje en consola  similar a este `Server running at 8000` 
   esto nos informa que ya se encuentra activo, de igual manera lo podemos 
-  visualizar en http://localhost:5000
+  visualizar en http://localhost:8000
 
 
 ## Cliente 

@@ -30,24 +30,40 @@ router.get('/items', async (req, res) => {
     const { data: category } = await axios.get(`${apiUrl}/categories/${category_id}`)
     categoryPath = category.path_from_root.map(({ name }: { name: any }) => name)
   }
+
+  const items = await Promise.all(response.results.map(async ({ id, title, currency_id, price, thumbnail, condition, shipping, seller } :
+    { id: any; title: any; currency_id: any; price: any; thumbnail: any; condition: any; shipping: any, seller: any }
+  ) => {
+    let city = {}
+    if (seller.id) {
+      city = await getSellerCity(seller.id)
+    }
+    return {
+      id,
+      title,
+      price: formatPrice(price, currency_id),
+      picture: thumbnail,
+      condition,
+      free_shipping: shipping.free_shipping,
+      city
+    }
+  }))
   // build res json
   const results: Search = {
     author: {
       name: 'Alejandro',
       lastname: 'Nava'
     },
-    items: response.results.map(({ id, title, currency_id, price, thumbnail, condition, shipping }: { id: any; title: any; currency_id: any; price: any; thumbnail: any; condition: any; shipping: any }
-    ) => ({
-      id,
-      title,
-      price: formatPrice(price, currency_id),
-      picture: thumbnail,
-      condition,
-      free_shipping: shipping.free_shipping
-    })),
+    items,
     categories: categoryPath
   }
   res.json(results)
 })
 
 export default router
+
+
+async function getSellerCity (id: String) {
+  const { data: user } = await axios.get(`${apiUrl}/users/${id}`)
+  return user.address.city
+}

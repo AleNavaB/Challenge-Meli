@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate, useSearchParams } from 'react-router-dom'
+import { useLocation, useSearchParams } from 'react-router-dom'
+import Helmet from 'react-helmet'
 import axios from 'axios'
 import Header from '../components/Header'
 import Breadcrumbs from '../components/Breadcrumbs'
@@ -20,13 +21,20 @@ interface Item {
 }
 const Results = (props: Props) => {
   const [searchParams] = useSearchParams()
+  const location = useLocation()
   const [search, setSearch] = useState<null | string>()
   const [items, setItems] = useState<any | Array<Item>>()
   const [categories, setCategories] = useState<any | Array<Item>>()
+  const [url, setUrl] = useState<string | any>()
 
-  useEffect(()=>{
+  useEffect(() => {
     setSearch(searchParams.get('search'))
   }, [searchParams])
+
+  useEffect(() => {
+    const { pathname, search } = location
+    setUrl(`${pathname}${search}`)
+  }, [location])
 
   useEffect(()=>{
     if (search) {
@@ -42,6 +50,12 @@ const Results = (props: Props) => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{`${search} | Challenge tecnico front end Mercado libre`}</title>
+        <link rel="canonical" href={`http://localhost:3000${url}`} />
+        <meta name="description" content="Aplicacion para el challenge tecnico de Mercado libre, busqueda de productos" />
+      </Helmet>
       <Header search={search} />
       {categories && <Breadcrumbs categories={categories} />}
       <div className='results_container'>

@@ -16,7 +16,8 @@ export interface Search
       },
       picture: String,
       condition: String,
-      free_shipping: Boolean
+      free_shipping: Boolean,
+      city: String
     }
   ] | any
 }
