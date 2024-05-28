@@ -1,13 +1,13 @@
-### Test práctico - Frontend - Servidor
+# Test práctico - Frontend - Servidor
   Servidor de APIs para la búsqueda de productos y detalle de los mismos.
 
-## Tecnologias
+## Tecnologías
   - Express
   - TypeScript
 
 ## Requerimientos
-  Node >= 14.20.1
-  Npm >= 6.14.17
+  - Node >= 14.20.1
+  - Npm >= 6.14.17
 
 ## Instalación
 Instalamos las dependencias necesarias ejecutando el comando 
@@ -22,10 +22,10 @@ Instalamos las dependencias necesarias ejecutando el comando
 ## Funcionalidad
   El servidor contiene las siguientes APIs
 
-# Obtención de resultados 
-  # API `/api/items?q=:query`
-  # METHOD `Get`
-  # RESPONSE
+## Obtención de resultados 
+  #### API `/api/items?q=:query`
+  #### METHOD `Get`
+  #### RESPONSE
     ```
       {
         "author": {
@@ -48,9 +48,9 @@ Instalamos las dependencias necesarias ejecutando el comando
         }]
       }
     ```
-  # API `/api/items/:id`
-  # METHOD `Get`
-  # RESPONSE
+  #### API `/api/items/:id`
+  #### METHOD `Get`
+  #### RESPONSE
     ```
       {
         "author": {
