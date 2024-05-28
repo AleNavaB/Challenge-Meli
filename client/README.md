@@ -24,13 +24,13 @@
 ## Funcionalidad
   La aplicación cuenta con 3 vistas:
 
-  # Home `/`
+  ### Home `/`
     Aquí es donde podemos comenzar a buscar algun producto desde el `search_box` del header
 
-  # Resultados `items?search=`
+  ### Resultados `items?search=`
     Nos muestra la lista de resultados encontrados, podemos dar click a cualquiera de ellos
     y nos mandará al detalle del producto.
 
-  # Detalle del producto `items/:id`
+  ### Detalle del producto `items/:id`
     Podemos ingresar directamente un ID o llegar por la vista de resultados.
     Aquí nos muestra el detalle del producto solicitado.
