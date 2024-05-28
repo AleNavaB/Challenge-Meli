@@ -1,0 +1,74 @@
+.description {
+  &_container {
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 1280px;
+    align-items: center;
+    font-size: $small;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1.25rem;
+    grid-row-gap: 1.25rem;
+  }
+  &_wrapper {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-template-columns: 680px, repeat(3, 1fr);
+    grid-column-gap: 1.25rem;
+    grid-row-gap: 1.25rem;    
+    background-color: $white;
+    &_left {
+      width: 680px;
+    }
+    &_right {
+      grid-column-start: 2;
+    }
+    & .info {
+      &_title {
+        margin: 0;
+        margin-bottom: 2rem;
+        font-size: $x-large;
+        font-weight: 700;
+      }
+      &_description {
+        margin: 0;
+        font-size: $base;
+        color: $gray-200;
+      }
+      &_specs {
+        margin: 0;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: $small;
+        display: flex;
+        align-items: center;
+      }
+      &_price {
+        margin: 0;
+        margin-bottom: 2rem;
+        font-size: $xxx-large;
+        display: flex;
+        &_decimals {
+          font-size: $large;
+          margin-top: .5rem;
+        }
+      }
+      &_button {
+        margin-right: 2rem;
+      }
+    }    
+  }
+  &_image_preview {
+    width: 680px;
+    margin-top: 2rem;
+  }
+  &_info {
+    margin: 2rem 0 2rem 2rem;
+    &_title {
+      margin: 0;
+      margin-bottom: 2rem;
+      font-size: $xx-large;
+    }
+  }
+}

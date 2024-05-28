@@ -1,0 +1,32 @@
+.breadcrum {
+  &_container {
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 1280px;
+    align-items: center;
+    font-size: $small;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1.25rem;
+    grid-row-gap: 1.25rem;
+  }
+  &_wrapper {
+    grid-column-start: 2;
+    grid-column-end: 12;
+    display: flex;
+    align-items: center;
+  }
+  &_text {
+    display: flex;
+    align-items: center;
+  }
+  &_category {
+    font-size: $small;
+    color: $gray-200;
+  }
+  &_separator {
+    font-size: $small;
+    color: $gray-200;
+    margin: 0 6px;
+  }
+}

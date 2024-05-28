@@ -1,0 +1,14 @@
+.button_primary {
+  background-color: $blue-200;
+  border-radius: .25rem;
+  padding: 0 1.5rem;
+  width: 100%;
+  height: 48px;
+  color: $white;
+  font-size: $large;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: $blue-300;
+  }
+}

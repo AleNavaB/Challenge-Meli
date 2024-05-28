@@ -1,0 +1,60 @@
+.header {
+  &_container {
+    display: flex;
+    justify-content: center;
+    background-color: $yellow-600;
+    padding: .5rem 0;
+  }
+
+  &_searchbar {
+    width: 100%;
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1.25rem;
+    grid-row-gap: 1.25rem;
+    align-items: center;
+  }
+
+  &_logo{
+    grid-column-start: 2;
+    display: flex;
+    align-items: center;
+  }
+    
+  &_searchbox {
+    position: relative;
+    height: 2.5rem;
+    display: flex;
+    grid-column-start: 3;
+    grid-column-end: 12;
+    margin-left: -1.25rem;
+    font-size: $large;
+    border-radius: .125rem;
+    & input {
+      width: 100%;
+      padding: 0 1rem;
+      border: none;
+      border-radius: .25rem;
+      outline: none;
+      color: $gray-400;
+      &::placeholder {
+        color: $gray-200;
+      }
+    }
+  }
+  &_button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $gray-100;
+  }
+}

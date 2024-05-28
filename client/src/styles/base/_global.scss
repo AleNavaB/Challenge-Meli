@@ -1,0 +1,42 @@
+
+// colors
+  $yellow-600:  #FFE600;
+  $gray-400: #333333;
+  $gray-300: #666666;
+  $gray-200: #999999;
+  $gray-100: #EEEEEE;
+  $white: #ffffff;
+  $blue-300: #2968c8;
+  $blue-200: #3483FA;
+
+
+// font sizes
+  $x-small:12px;
+  $small:14px;
+  $base:16px;
+  $large:18px;
+  $x-large:24px;
+  $xx-large:28px;
+  $xxx-large:46px;
+
+body {
+  min-width: 920px;
+  background-color: $gray-100;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: $base;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+p {
+  margin: 0;
+  font-size: $base;
+}
