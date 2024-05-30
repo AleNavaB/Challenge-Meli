@@ -1,4 +1,6 @@
 # Test práctico Front-end -- Alejandro Nava
+
+### Consideraciones de la prueba
 Test práctico para aspirantes al área de front-end de Mercado Libre.
 
 A continuación presentamos el diseño y la descripción funcional de una pequeña aplicación que será la base del trabajo que deberás desarrollar.
@@ -18,10 +20,12 @@ La aplicación consta de tres componentes principales: la caja de búsqueda, la 
     - Caja de búsqueda
     - Resultados de la búsqueda
     - Detalle del producto
+
   - Las vistas son navegables de manera independiente y cuentan con su propia url:
     - Caja de Búsqueda: “/”
     - Resultados de la búsqueda:“/items?search=”
     - Detalle del producto: “/items/:id”
+
   - Construir los siguientes endpoints para ser utilizados desde las vistas:
     - /api/items?q=:query
     
@@ -76,7 +80,7 @@ La aplicación consta de tres componentes principales: la caja de búsqueda, la 
 
 ### Descripción funcional de la aplicación
 
-- En la vista de caja de búsqueda, debería poder ingresar el producto a buscar y al enviar el formulario navegar a la vista de Resultados de búsqueda, visualizando solo 4 productos. Luego, al hacer clic sobre uno de ellos, debería navegar a la vista de Detalle de Producto.
+- En la vista de caja de búsqueda, debería poder ingresar el producto a buscar y al enviar el formulario navegar a la vista de `Resultados de búsqueda`, visualizando solo 4 productos. Luego, al hacer clic sobre uno de ellos, debería navegar a la vista de `Detalle de Producto`.
 - Dado un id de producto, debería poder ingresar directamente a la vista de detalle de producto.
 
 ## Desarrollo 🛠️
@@ -84,7 +88,7 @@ La aplicación consta de tres componentes principales: la caja de búsqueda, la 
 Instrucciones para poder instalar y ejecutar el test práctico para aspirantes 
 al área de front-end de Mercado Libre.
 
-Cada proyecto tiene su README más específico en la raiz de su carpeta.
+Cada proyecto tiene su *README* más específico en la raiz de su carpeta.
 
 Aquí se encuentran las consideraciones e instrucciones generales.
 

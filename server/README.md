@@ -14,7 +14,7 @@ Instalamos las dependencias necesarias ejecutando el comando
 `npm install`
 
 ## Ejecucion 🚀
-  Para poder iniciar nuestro servidor ejecutamos el comando `npm run dev`
+  Para poder iniciar nuestro servidor, ejecutamos el comando `npm run dev`
   nos devolvera un mensaje en consola  similar a este `Server running at 8000` 
   esto nos informa que ya se encuentra activo, de igual manera lo podemos 
   visualizar en http://localhost:8000
