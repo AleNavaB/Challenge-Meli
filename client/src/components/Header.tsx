@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from '../assets/images/Logo_ML.png'
 import iconSearch from '../assets/icons/ic_Search.png'
 import { Link, useNavigate } from 'react-router-dom'
@@ -10,6 +10,10 @@ type Props = {
 const Header = (props: Props) => {
   const [searchText, setSearchText] = useState<string | any>('')
   const navigate = useNavigate();
+
+  useEffect(() => {
+    setSearchText(props.search)
+  },[props.search])
 
   const goToSearch = () => {
     if (searchText){
