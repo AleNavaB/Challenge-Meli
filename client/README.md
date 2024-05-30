@@ -28,16 +28,16 @@
   ### Home 🔗 http://localhost:3000/
   Aquí es donde podemos comenzar a buscar algun producto desde el `search_box` del header
 
-  <img src="../images/home.png" alt="home">
+  <img src="../images/home.png" alt="home" width="50%">
 
   ### Resultados 🔗 http://localhost:3000/items?search=
   Nos muestra la lista de resultados encontrados, podemos dar click a cualquiera de ellos
     y nos mandará al detalle del producto.
 
-  <img src="../images/resultados.png" alt="home">
+  <img src="../images/resultados.png" alt="home" width="50%">
 
   ### Detalle del producto 🔗 http://localhost:3000/items/:id
   Podemos ingresar directamente un ID o llegar por la vista de resultados.
     Aquí nos muestra el detalle del producto solicitado.
 
-  <img src="../images/detalle.png" alt="home">
+  <img src="../images/detalle.png" alt="home" width="50%">

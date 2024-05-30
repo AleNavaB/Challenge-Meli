@@ -6,11 +6,11 @@ A continuación presentamos el diseño y la descripción funcional de una peque�
 La aplicación consta de tres componentes principales: la caja de búsqueda, la visualización de resultados, y la descripción del detalle del producto.
 <div>
 <p> 1. Caja de búsqueda </p>
-  <img src="images/01_Buscador.png" alt="buscador">
+  <img src="images/01_Buscador.png" alt="buscador" width="50%">
 <p> 2. Resultado de la búsqueda</p>  
-  <img src="images/02_Resultados.png" alt="resultados"> 
+  <img src="images/02_Resultados.png" alt="resultados" width="50%"> 
 <p> 3. Detalle del producto </p>
-  <img src="images/02_Detalle.png" alt="detalle">
+  <img src="images/02_Detalle.png" alt="detalle" width="50%">
 </div>
 
 ### Te pedimos
@@ -86,7 +86,7 @@ al área de front-end de Mercado Libre.
 
 Cada proyecto tiene su README más específico en la raiz de su carpeta.
 
-Aquí se encuentran las instrucciones generales.
+Aquí se encuentran las consideraciones e instrucciones generales.
 
 ##  Requerimientos 📝
   - Node >= 14.20.1
@@ -94,7 +94,7 @@ Aquí se encuentran las instrucciones generales.
 
 ## Estructura del proyecto 
 ``` sh
-├───client/
+├───client/                                           ------> Front-end
 │   ├───public/
 │   │   ├───favicon.ico
 │   │   ├───index.html
@@ -145,7 +145,7 @@ Aquí se encuentran las instrucciones generales.
 │   ├───package-lock.json
 │   ├───package.json
 │   └───tsconfig.json
-├───images/
+├───images/                                       
 │   ├───01_Buscador.png
 │   ├───02_Detalle.png
 │   ├───02_Resultados.png
@@ -154,7 +154,7 @@ Aquí se encuentran las instrucciones generales.
 │   ├───detalle.png
 │   ├───home.png
 │   └───resultados.png
-├───server/
+├───server/                                         ------> Servidor APIs
 │   ├───src/
 │   │   ├───models/
 │   │   │   ├───item.ts
@@ -172,7 +172,7 @@ Aquí se encuentran las instrucciones generales.
 ```
 
 ## Servidor 🔗
-  Primero debemos navegar dentro de la carpeta `server` con el comando
+  Navegar dentro de la carpeta `server` con el comando
   `cd server/`
 
   ## Instalación 🚧
@@ -187,7 +187,7 @@ Aquí se encuentran las instrucciones generales.
 
 
 ## Cliente 🔗
-  Primero debemos navegar dentro de la carpeta `client` con el comando
+  Navegar dentro de la carpeta `client` con el comando
   `cd client/`
 
   ## Instalación 🚧

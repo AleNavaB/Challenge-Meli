@@ -26,10 +26,10 @@ Instalamos las dependencias necesarias ejecutando el comando
   #### METHOD `GET`
   #### RESPONSE
 
-  <img src="../images/api-resultados.png" alt="api-resultados">
+  <img src="../images/api-resultados.png" alt="api-resultados" width="50%">
 
   #### API `/api/items/:id`
   #### METHOD `Get`
   #### RESPONSE
 
-  <img src="../images/api-detalle.png" alt="home">
+  <img src="../images/api-detalle.png" alt="api-detalle" width="50%">
